@@ -5,18 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>call and apply</title>
+    <title>数组</title>
     <script>
-        var name = "A";
-        var user = {
-            name: 'B'
-        };
-
-        function showName() {
-            alert(this.name);
+        var a = new Array(0, 1, 2, 3, 4);
+        var len = a.length;
+        for (var i = 0; i < len; i++) {
+            document.write("a[i]=" + a[i] + " ");
         }
-        showName();
-        showName.call(user);
+        document.write("<br>")
     </script>
 </head>
 

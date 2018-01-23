@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>可变参数</title>
+    <script>
+        function MAX() {
+            var m = Number.NEGATIVE_INFINITY;
+            for (var i = 0; i < arguments.length; i++) {
+                if (arguments[i] > m) m = arguments[i];
+            }
+            return m;
+        }
+        var largest = MAX(1, 2, 99, 58, 78);
+        document.write("最大的数是" + largest);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
