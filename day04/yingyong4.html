@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>回文字符串</title>
+    <script>
+        function isPalindrome(value) {
+            var len = value.length;
+            if (len <= 1) {
+                return false;
+            }
+            var count = len / 2;
+            var j = len - 1;
+            for (var i = 0; i < count; i++, j--) {
+                if (value.charAt(i) != value.charAt(j)) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        document.write(isPalindrome('abcba') + "<br>");
+        document.write(isPalindrome('abcddba') + "<br>");
+    </script>
+</head>
+
+<body>
+    <h1>一个字符串从左到右和从右到左都是一样的</h1>
+</body>
+
+</html>
